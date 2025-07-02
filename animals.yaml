@@ -1,0 +1,6 @@
+# animals.yaml
+path: ./Animals                  # root folder of dataset
+train: images/train              # train images
+val:   images/test               # test images (you can rename test→val in YAML)
+nc: 10                           # number of classes
+names: ['Tiger','Leopard','Cheetah','Elephant','Monkey','Deer','Lion','Bear','Pig','Bull']
