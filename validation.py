@@ -5,7 +5,7 @@ from pathlib import Path
 from ultralytics import YOLO
 
 
-# 🧪 Validation Function (as you originally defined)
+# 🧪 Validation Function
 def validate_model(model_path, data_yaml_path):
     """Validate the trained model"""
     print("🔍 Validating trained model...")
@@ -49,7 +49,7 @@ def validate_model(model_path, data_yaml_path):
     return results
 
 
-# 🚀 Main Function Entry Point
+# 🚀 Main Function Entry Point 
 if __name__ == "__main__":
     model_path = "best.pt"
     data_yaml_path = "animals.yaml"

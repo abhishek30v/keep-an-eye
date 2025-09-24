@@ -93,7 +93,7 @@ def upload_clip_and_get_link(buffer, fps, frame_size, timestamp):
 def main():
     print("AnimalDetection")
    
-    # Mobile camera URL, replace with your camera stream URL
+    # Mobile camera URL, replace with your camera stream URL for real time detection
     mobile_camera_url = "http://192.168.31.142:8080/video"  # It contains the stream URL of the camera that has been used.
 
     # Open the camera stream
@@ -124,7 +124,7 @@ def main():
         # Perform inference with YOLO model
         results = model(frame, stream=True)
 
-        # Process bounding boxes and display results
+        # Process bounding boxes and display results 
         for info in results:
             boxes = info.boxes
             for box in boxes:
